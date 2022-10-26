@@ -23,6 +23,14 @@ app.use((req, res) => {
   res.status(404).end();
 });
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "./user-interface/build")))
+}
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./user-interface/build/index.html"))
+})
+
 // Start server after DB connection
 db.connect(err => {
   if (err) throw err;
