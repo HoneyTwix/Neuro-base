@@ -25,7 +25,7 @@ function App() {
     
     
     <Routes>
-      <Route path="https://neuro-base.herokuapp.com/" element={<Nav/>}/>
+      <Route path="https://neuro-base.herokuapp.com" element={<Nav/>}/>
       <Route path="https://neuro-base.herokuapp.com/anova_sf1" element={<File/>}/>
       <Route path="https://neuro-base.herokuapp.com/table" element={<Table/>}/>
       <Route path='https://neuro-base.herokuapp.com/filename' element = {<Filename/>}/>
