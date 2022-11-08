@@ -22,16 +22,16 @@ import Nav from './pages/Nav';
 function App() {
   
   return (
-    
+    // "https://neuro-base.herokuapp.com/anova_sf1
     
     <Routes>
-      <Route path="https://neuro-base.herokuapp.com/" element={<Nav/>}/>
-      <Route path="https://neuro-base.herokuapp.com/anova_sf1" element={<File/>}/>
-      <Route path="https://neuro-base.herokuapp.com/table" element={<Table/>}/>
-      <Route path='https://neuro-base.herokuapp.com/filename' element = {<Filename/>}/>
-      <Route path='https://neuro-base.herokuapp.com/session' element = {<Session/>}/>
-      <Route path='https://neuro-base.herokuapp.com/filenameTable' element = {<FilenameTable/>}/>
-      <Route path='https://neuro-base.herokuapp.com/sessionTable' element = {<SessionTable/>}/>
+      <Route path="/" element={<Nav/>}/>
+      <Route path="anova_sf1" element={<File/>}/>
+      <Route path="table" element={<Table/>}/>
+      <Route path='filename' element = {<Filename/>}/>
+      <Route path='session' element = {<Session/>}/>
+      <Route path='filenameTable' element = {<FilenameTable/>}/>
+      <Route path='sessionTable' element = {<SessionTable/>}/>
     </Routes>
 );
 }

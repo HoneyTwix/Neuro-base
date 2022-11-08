@@ -4,6 +4,7 @@ const apiRoutes = require('./routes/apiRoutes');
 const path = require("path")
 const PORT = process.env.PORT || 3001;
 const app = express();
+const cors = require('cors')
 
 // Express middleware
 app.use(express.urlencoded({ extended: false }));
@@ -18,18 +19,34 @@ app.use(function(req, res, next) {
 // Use apiRoutes
 app.use('/api', apiRoutes);
 
-// Default response for any other request (Not Found)
-app.use((req, res) => {
-  res.status(404).end();
-});
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname +"/public")))
+  app.use(express.static(path.join(__dirname ,"./user-interface/build")))
 }
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname+"/public/index.html"))
+  res.sendFile(path.join(__dirname,"./user-interface/build/index.html"))
 })
+
+
+// Default response for any other request (Not Found)
+// app.use((req, res) => {
+//   res.status(404).end();
+// });
+
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname +"/public")))
+// }
+
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname+"/public/index.html"))
+// })
+
+// app.use(cors())
+
+// app.get('/',(req,res)=>{
+//   res.json({greeting: 'Hello World'})
+// })
 
 
 
