@@ -1,1 +1,1 @@
-web: /user-interface
+web: npm start
