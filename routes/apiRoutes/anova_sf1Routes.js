@@ -33,6 +33,7 @@ router.get('/anova_sf1/:filename', (req, res) => {
       message: 'success',
       data: row
     });
+    db.destroy()
   });
 });
 
@@ -57,6 +58,7 @@ router.post('/anova_sf1', ({ body }, res) => {
       data: body
     });
   });
+  db.destroy()
 });
 
 // Update an anova_sf1 neuron
