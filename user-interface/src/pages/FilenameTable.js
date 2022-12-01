@@ -32,7 +32,7 @@ const FilenameTable = () => {
   // // ...
   const addPosts = async (Filename, RecordingDay,Date, Monkey,Task,TechnicalNotes,Comment) => {
     console.log('hi')
-     await fetch('https://neuro-base.herokuapp.com/api/filename/', {
+     await fetch('https://web-production-d1d3.up.railway.app/api/filename/', {
         method: 'POST',
         body: JSON.stringify({
           Filename: Filename,

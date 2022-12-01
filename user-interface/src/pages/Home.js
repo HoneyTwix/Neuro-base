@@ -7,7 +7,7 @@ const Home = () => {
     const [anovas, setAnova] = useState([]);
     useEffect(() => {
         console.log('hi')
-       fetch('https://neuro-base.herokuapp.com/api/anova_sf1/?_limit=10')
+       fetch('https://web-production-d1d3.up.railway.app/api/anova_sf1/?_limit=10')
           .then((response) => response.json())
           .then((data) => {
              console.log(data);
@@ -19,7 +19,7 @@ const Home = () => {
     }, []);
 
     const deletePost = async (id) => {
-        await fetch(`https://neuro-base.herokuapp.com/api/anova_sf1/${id}`, {
+        await fetch(`https://web-production-d1d3.up.railway.app/api/anova_sf1/${id}`, {
            method: 'DELETE',
         }).then((response) => {
            if (response.status === 200) {

@@ -15,7 +15,7 @@ const Session = () => {
    
     const getFile = async (Date) => {
       console.log('hi')
-        await fetch(`https://neuro-base.herokuapp.com/api/session/${Date}`)
+        await fetch(`https://web-production-d1d3.up.railway.app/api/session/${Date}`)
         .then((response) => response.json())
         .then((data) => {
            console.log(data);

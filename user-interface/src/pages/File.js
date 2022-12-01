@@ -15,7 +15,7 @@ const File = () => {
    
     const getFile = async (Filename) => {
       console.log('hi')
-        await fetch(`https://neuro-base.herokuapp.com/api/anova_sf1/${Filename}`)
+        await fetch(`https://web-production-d1d3.up.railway.app/api/anova_sf1/${Filename}`)
         .then((response) => response.json())
         .then((data) => {
            console.log(data);
@@ -28,7 +28,7 @@ const File = () => {
     }
 
     const deletePost = async (id) => {
-        await fetch(`https://neuro-base.herokuapp.com/api/anova_sf1/${id}`, {
+        await fetch(`https://web-production-d1d3.up.railway.app/api/anova_sf1/${id}`, {
            method: 'DELETE',
         }).then((response) => {
            if (response.status === 200) {
