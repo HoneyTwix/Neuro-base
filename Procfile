@@ -1,2 +1,1 @@
-web: npm start
-worker: cd user-interface && npm i && npm run build
+web: cd user-interface && npm i && npm run build && cd .. && npm start
