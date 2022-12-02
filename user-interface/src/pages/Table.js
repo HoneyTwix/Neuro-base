@@ -33,7 +33,7 @@ const Table = () => {
   // // ...
   const addPosts = async (Filename, Neuron,Anova1Cue, Anova1Delay,Anova1Sample,Anova1Delay2,Anova1Match,Anova1MatchDelay) => {
     console.log('hi')
-     await fetch('https://web-production-d1d3.up.railway.app/api/anova_sf1/', {
+     await fetch('https://web-production-a8ff.up.railway.app/api/anova_sf1/', {
         method: 'POST',
         body: JSON.stringify({
           Filename: Filename,

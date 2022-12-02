@@ -38,7 +38,7 @@ const SessionTable = () => {
   // // ...
   const addPosts = async (Monkey, Hemisphere,Training, Date,Recording_Day,Electrode,Channel,AnteriorPosterior,LateralMedial,Area,setZero,advanceDepth,totalDepth) => {
     console.log('hi')
-     await fetch('https://web-production-d1d3.up.railway.app/api/session/', {
+     await fetch('https://web-production-a8ff.up.railway.app/api/session/', {
         method: 'POST',
         body: JSON.stringify({
             Monkey: Monkey,

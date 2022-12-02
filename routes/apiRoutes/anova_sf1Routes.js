@@ -33,6 +33,7 @@ router.get('/anova_sf1/:filename', (req, res) => {
       message: 'success',
       data: row
     });
+    db.destroy()
   });
 });
 
@@ -56,6 +57,7 @@ router.post('/anova_sf1', ({ body }, res) => {
       message: 'success',
       data: body
     });
+    db.destroy()
   });
 });
 

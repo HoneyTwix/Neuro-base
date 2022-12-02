@@ -7,7 +7,7 @@ const Home = () => {
     const [anovas, setAnova] = useState([]);
     useEffect(() => {
         console.log('hi')
-       fetch('https://web-production-d1d3.up.railway.app/api/anova_sf1/?_limit=10')
+       fetch('https://web-production-a8ff.up.railway.app/api/anova_sf1/?_limit=10')
           .then((response) => response.json())
           .then((data) => {
              console.log(data);
