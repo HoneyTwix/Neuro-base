@@ -17,6 +17,11 @@ router.get('/anova_sf1', (req, res) => {
       data: rows
     });
   });
+
+  
+  db.end();
+
+
 });
 
 // Get data on an anova_sf1 row based on filename
@@ -35,6 +40,12 @@ router.get('/anova_sf1/:filename', (req, res) => {
     });
     
   });
+
+  
+  
+  db.end();
+
+
 });
 
 // Create an anova_sf1 row
@@ -59,6 +70,12 @@ router.post('/anova_sf1', ({ body }, res) => {
     });
     
   });
+
+  
+  
+  db.end();
+
+
 });
 
 // Update an anova_sf1 neuron
@@ -87,6 +104,12 @@ router.put('/anova_sf1/:filename', (req, res) => {
       });
     }
   });
+
+  
+  
+  db.end();
+
+
 });
 
 // Delete an anova_sf1 row
@@ -108,6 +131,12 @@ router.delete('/anova_sf1/:id', (req, res) => {
       });
     }
   });
+
+  
+  
+  db.end();
+
+
 });
 
 module.exports = router;
