@@ -15,7 +15,7 @@ const Session = () => {
    
     const getFile = async (Date) => {
       console.log('hi')
-        await fetch(`https:/web-production-a8ff.up.railway.app/api/session/${Date}`)
+        await fetch(`https://web-production-4be1.up.railway.app/api/session/${Date}`)
         .then((response) => response.json())
         .then((data) => {
            console.log(data);
@@ -28,7 +28,7 @@ const Session = () => {
     }
 
     const deletePost = async (id) => {
-        await fetch(`https:/web-production-a8ff.up.railway.app/api/session/${id}`, {
+        await fetch(`https://web-production-4be1.up.railway.app/api/session/${id}`, {
            method: 'DELETE',
         }).then((response) => {
            if (response.status === 200) {

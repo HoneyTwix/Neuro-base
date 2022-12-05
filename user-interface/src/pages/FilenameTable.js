@@ -32,7 +32,7 @@ const FilenameTable = () => {
   // // ...
   const addPosts = async (Filename, RecordingDay,Date, Monkey,Task,TechnicalNotes,Comment) => {
     console.log('hi')
-     await fetch('https://web-production-a8ff.up.railway.app/api/filename/', {
+     await fetch('https://web-production-4be1.up.railway.app/api/filename/', {
         method: 'POST',
         body: JSON.stringify({
           Filename: Filename,

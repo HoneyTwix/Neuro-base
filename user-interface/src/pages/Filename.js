@@ -15,7 +15,7 @@ const Filename = () => {
    
     const getFile = async (Filename) => {
       console.log('hi')
-        await fetch(`https://web-production-a8ff.up.railway.app/api/filename/${Filename}`)
+        await fetch(`https://web-production-4be1.up.railway.app/api/filename/${Filename}`)
         .then((response) => response.json())
         .then((data) => {
            console.log(data);
@@ -28,7 +28,7 @@ const Filename = () => {
     }
 
     const deletePost = async (id) => {
-        await fetch(`https://web-production-a8ff.up.railway.app/api/filename/${id}`, {
+        await fetch(`https://web-production-4be1.up.railway.app/api/filename/${id}`, {
            method: 'DELETE',
         }).then((response) => {
            if (response.status === 200) {
