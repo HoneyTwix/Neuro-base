@@ -9,6 +9,11 @@ const mysql = require('mysql2');
 //   database: 'neuro'
 // });
 
+// host: "us-cdbr-east-06.cleardb.net",
+// user: "b1fb543e385434",
+// password: "77801be9",
+// database: "heroku_1550511dffaec6e"
+
 const db = mysql.createConnection({ 
 host: "us-cdbr-east-06.cleardb.net",
 user: "b1fb543e385434",
