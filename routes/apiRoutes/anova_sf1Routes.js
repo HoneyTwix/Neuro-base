@@ -19,7 +19,7 @@ router.get('/anova_sf1', (req, res) => {
   });
 
   
-  db.open();
+  db.destroy();
 
 
 });
@@ -43,7 +43,7 @@ router.get('/anova_sf1/:filename', (req, res) => {
 
   
   
-  db.open();
+  db.destroy();
 
 
 });
@@ -73,7 +73,7 @@ router.post('/anova_sf1', ({ body }, res) => {
 
   
   
-  db.open();
+  db.destroy();
 
 
 });
@@ -107,7 +107,7 @@ router.put('/anova_sf1/:filename', (req, res) => {
 
   
   
-  db.open();
+  db.destroy();
 
 
 });
@@ -134,7 +134,7 @@ router.delete('/anova_sf1/:id', (req, res) => {
 
   
   
-  db.open();
+  db.destroy();
 
 
 });
