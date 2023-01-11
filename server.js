@@ -52,7 +52,8 @@ app.get("*", (req, res) => {
 
 
 // Start server after DB connection
-db.connect(err => {
+//.connect
+db.getConnection(err => {
   if (err) throw err;
   console.log('Database connected.');
   app.listen(PORT, () => {
